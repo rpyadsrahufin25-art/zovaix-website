@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 1400" fill="none">
+  <defs>
+    <linearGradient id="steel" x1="154" y1="179" x2="1208" y2="1183" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6FFFF"/>
+      <stop offset=".10" stop-color="#5AAEB2"/>
+      <stop offset=".25" stop-color="#15353E"/>
+      <stop offset=".42" stop-color="#D4FFFF"/>
+      <stop offset=".59" stop-color="#315B63"/>
+      <stop offset=".78" stop-color="#E7FFFF"/>
+      <stop offset="1" stop-color="#1C4A54"/>
+    </linearGradient>
+    <linearGradient id="darkSteel" x1="314" y1="221" x2="1039" y2="1169" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#092A34"/>
+      <stop offset=".17" stop-color="#64CAC8"/>
+      <stop offset=".34" stop-color="#071C29"/>
+      <stop offset=".60" stop-color="#163E49"/>
+      <stop offset=".82" stop-color="#B4F9F1"/>
+      <stop offset="1" stop-color="#061E2A"/>
+    </linearGradient>
+    <linearGradient id="limeRail" x1="421" y1="293" x2="1049" y2="1047" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6FFC0"/>
+      <stop offset=".32" stop-color="#D5FA6D"/>
+      <stop offset=".66" stop-color="#52C885"/>
+      <stop offset="1" stop-color="#0E746E"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0" cy="0" r="1" gradientTransform="rotate(50 -127 811) scale(543)">
+      <stop stop-color="#BFFFF4"/>
+      <stop offset=".13" stop-color="#52D9D3"/>
+      <stop offset=".32" stop-color="#0C7B7B"/>
+      <stop offset=".58" stop-color="#063A4C"/>
+      <stop offset=".80" stop-color="#031E2A"/>
+      <stop offset="1" stop-color="#010E16"/>
+    </radialGradient>
+    <radialGradient id="lensInner" cx="0" cy="0" r="1" gradientTransform="matrix(0 252 -252 0 700 700)">
+      <stop stop-color="#C2FFF6"/>
+      <stop offset=".12" stop-color="#74E6DB"/>
+      <stop offset=".39" stop-color="#126E72"/>
+      <stop offset=".70" stop-color="#093742"/>
+      <stop offset="1" stop-color="#001922"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="462" y1="354" x2="923" y2="1054" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FFFD" stop-opacity=".88"/>
+      <stop offset=".15" stop-color="#B3F5EB" stop-opacity=".48"/>
+      <stop offset=".47" stop-color="#2B9699" stop-opacity=".17"/>
+      <stop offset=".74" stop-color="#082C3C" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#00131E" stop-opacity=".95"/>
+    </linearGradient>
+    <linearGradient id="facet" x1="516" y1="463" x2="886" y2="929" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".67"/>
+      <stop offset=".21" stop-color="#7BE6DD" stop-opacity=".19"/>
+      <stop offset=".68" stop-color="#042633" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#9BFFF0" stop-opacity=".39"/>
+    </linearGradient>
+    <linearGradient id="crystal" x1="635" y1="478" x2="802" y2="915" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8FFF9"/>
+      <stop offset=".18" stop-color="#6EE3D5"/>
+      <stop offset=".50" stop-color="#0C6570"/>
+      <stop offset=".78" stop-color="#042936"/>
+      <stop offset="1" stop-color="#A7FEEE"/>
+    </linearGradient>
+    <filter id="shadow" x="-45%" y="-45%" width="190%" height="190%">
+      <feDropShadow dx="0" dy="38" stdDeviation="28" flood-color="#000B14" flood-opacity=".88"/>
+    </filter>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <ellipse cx="730" cy="1169" rx="485" ry="74" fill="#00141C" fill-opacity=".63" filter="url(#glow)"/>
+  <g opacity=".66" filter="url(#soft)">
+    <circle cx="1020" cy="327" r="61" fill="#CFF867"/>
+    <circle cx="379" cy="991" r="49" fill="#5CE6FF"/>
+    <circle cx="1067" cy="804" r="103" fill="#1FE1C5"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M195 671C213 375 517 156 806 224c272 64 400 322 257 555-148 241-531 264-761 72" stroke="url(#steel)" stroke-width="32" stroke-linecap="round"/>
+    <path d="M369 246c257-141 614-13 729 255 102 239-103 518-385 543-244 22-467-135-510-352" stroke="url(#darkSteel)" stroke-width="25" stroke-linecap="round"/>
+    <path d="M234 908C83 666 245 343 516 234c261-105 541 48 604 272" stroke="url(#steel)" stroke-width="20" stroke-linecap="round" opacity=".95"/>
+    <path d="M297 494c95-202 362-315 574-224 150 64 254 204 259 365" stroke="url(#limeRail)" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g opacity=".9">
+    <path d="M250 658c103-155 284-241 470-215" stroke="#E7FFFC" stroke-opacity=".48" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 30"/>
+    <path d="M607 1073c176 23 365-87 436-236" stroke="#D6FA71" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 26"/>
+  </g>
+  <circle cx="708" cy="685" r="378" fill="url(#lens)" stroke="#D6FFF8" stroke-opacity=".44" stroke-width="5" filter="url(#shadow)"/>
+  <circle cx="708" cy="685" r="323" stroke="#B2FFF3" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="708" cy="685" r="279" fill="url(#lensInner)" stroke="#6DEAE3" stroke-opacity=".42" stroke-width="3"/>
+  <path d="M452 543c65-145 223-216 377-169 51 16 104 55 144 105-111-59-287-39-409 79-54 52-151 43-112-15Z" fill="#E3FFF9" fill-opacity=".24"/>
+  <path d="M469 842c84 136 274 193 419 95 52-35 88-81 107-139-9 171-150 305-322 305-145 0-268-95-312-226 37-37 74-46 108-35Z" fill="#001B29" fill-opacity=".53"/>
+  <g transform="rotate(-17 708 687)" filter="url(#shadow)">
+    <rect x="422" y="398" width="575" height="577" rx="126" fill="url(#glass)" stroke="#F3FFFE" stroke-opacity=".82" stroke-width="7"/>
+    <rect x="443" y="421" width="533" height="531" rx="108" fill="url(#facet)" stroke="#C5FFF7" stroke-opacity=".35" stroke-width="3"/>
+    <path d="M468 467c150-122 388-129 508-24-149-42-344 10-505 155-52 47-96-84-3-131Z" fill="#FFFFFF" fill-opacity=".33"/>
+    <path d="M457 850c163 92 372 76 514-39-66 127-188 190-326 166-91-16-151-59-188-127Z" fill="#001827" fill-opacity=".44"/>
+    <path d="M495 499L925 467 956 835 730 930 488 770 495 499Z" fill="#0C4250" fill-opacity=".32" stroke="#D9FFF8" stroke-opacity=".25" stroke-width="2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M677 463c93-8 178 53 194 144 17 95-44 188-137 208-94 20-188-40-211-132-23-94 36-193 130-220 8-2 16-4 24-5Z" fill="url(#crystal)" stroke="#E8FFF9" stroke-opacity=".75" stroke-width="4"/>
+    <path d="M657 523c64-20 137 19 153 83-59-35-145-29-214 40 0-55 24-103 61-123Z" fill="#F2FFFD" fill-opacity=".29"/>
+    <path d="M599 749c39 84 153 106 221 35-19 67-82 116-155 104-63-10-112-65-113-130 10-5 27-10 47-9Z" fill="#001D2B" fill-opacity=".45"/>
+    <g transform="rotate(-8 708 687)">
+      <path d="M629 610 790 610 748 657 808 657 622 765 685 692 622 692Z" fill="url(#steel)" stroke="#F1FFFC" stroke-opacity=".83" stroke-width="3" stroke-linejoin="round"/>
+      <path d="m700 638 63-10-103 87 34-53-53 9 59-33Z" fill="#061E2A" fill-opacity=".62"/>
+    </g>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="1122" cy="417" r="54" fill="url(#limeRail)" stroke="#F8FFCA" stroke-width="4"/>
+    <circle cx="1122" cy="417" r="28" fill="#0A595B" stroke="#DFFFF6" stroke-opacity=".47" stroke-width="3"/>
+    <circle cx="366" cy="945" r="40" fill="#62DFFF" stroke="#E5FFFF" stroke-opacity=".82" stroke-width="4"/>
+    <circle cx="366" cy="945" r="17" fill="#095B78"/>
+  </g>
+  <path d="M1059 435c45 29 67 79 62 131" stroke="#E5FF8C" stroke-width="7" stroke-linecap="round" stroke-dasharray="4 23"/>
+  <path d="M399 910c-38-28-59-71-57-117" stroke="#80E7FF" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 23"/>
+  <circle cx="1147" cy="592" r="10" fill="#DEFF80"/><circle cx="340" cy="758" r="9" fill="#75E8FF"/>
+</svg>

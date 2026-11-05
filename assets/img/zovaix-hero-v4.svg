@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1536" fill="none">
+  <defs>
+    <linearGradient id="night" x1="70" y1="20" x2="996" y2="1496" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#021114"/>
+      <stop offset=".32" stop-color="#082B30"/>
+      <stop offset=".69" stop-color="#061C25"/>
+      <stop offset="1" stop-color="#031114"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(671 425) rotate(126) scale(544)">
+      <stop stop-color="#5CE1D6" stop-opacity=".35"/>
+      <stop offset=".33" stop-color="#1C817E" stop-opacity=".23"/>
+      <stop offset=".71" stop-color="#083137" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#031315" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="acid" cx="0" cy="0" r="1" gradientTransform="translate(784 294) rotate(135) scale(156)">
+      <stop stop-color="#F1FFB2"/>
+      <stop offset=".35" stop-color="#CDF65B"/>
+      <stop offset="1" stop-color="#22A878" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chrome" x1="156" y1="191" x2="922" y2="873" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7FFFB"/>
+      <stop offset=".11" stop-color="#57BDBA"/>
+      <stop offset=".26" stop-color="#143943"/>
+      <stop offset=".45" stop-color="#F0FFFF"/>
+      <stop offset=".63" stop-color="#2C5B65"/>
+      <stop offset=".81" stop-color="#D9FFFA"/>
+      <stop offset="1" stop-color="#17434D"/>
+    </linearGradient>
+    <linearGradient id="limeRail" x1="325" y1="166" x2="829" y2="837" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3FFAD"/>
+      <stop offset=".38" stop-color="#CFF65B"/>
+      <stop offset=".7" stop-color="#39B982"/>
+      <stop offset="1" stop-color="#0D5D60"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="370" y1="232" x2="795" y2="804" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2FFFC" stop-opacity=".92"/>
+      <stop offset=".18" stop-color="#9BEFE5" stop-opacity=".52"/>
+      <stop offset=".56" stop-color="#1E7C7A" stop-opacity=".21"/>
+      <stop offset=".84" stop-color="#082C38" stop-opacity=".81"/>
+      <stop offset="1" stop-color="#E2FFF9" stop-opacity=".4"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="shadow" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="36" stdDeviation="30" flood-color="#00080D" flood-opacity=".82"/></filter>
+    <clipPath id="plateClip"><rect x="301" y="252" width="462" height="568" rx="104"/></clipPath>
+  </defs>
+  <rect width="1024" height="1536" fill="url(#night)"/>
+  <rect width="1024" height="1536" fill="url(#halo)"/>
+  <path d="M0 1161C195 1054 406 1045 612 1144c151 73 277 79 412 22v370H0v-375Z" fill="#021012" fill-opacity=".74"/>
+  <ellipse cx="593" cy="942" rx="367" ry="62" fill="#000C10" fill-opacity=".72" filter="url(#blur)"/>
+  <circle cx="794" cy="293" r="114" fill="url(#acid)" filter="url(#soft)"/>
+  <g opacity=".72" filter="url(#shadow)">
+    <path d="M149 605C177 347 404 156 660 184c230 26 368 246 285 468C864 870 525 964 270 801" stroke="url(#chrome)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M244 266c206-103 511-15 656 194 129 187 42 445-177 531-225 88-483-16-572-220" stroke="url(#chrome)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M139 798C32 577 205 311 431 225c255-97 545 52 571 294" stroke="url(#limeRail)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g opacity=".84">
+    <path d="M195 500c94-189 314-287 511-229" stroke="#D4FFF7" stroke-opacity=".42" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 25"/>
+    <path d="M457 1000c193 31 399-86 469-257" stroke="#DDFD83" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 22"/>
+  </g>
+  <g transform="rotate(-13 532 536)" filter="url(#shadow)">
+    <rect x="286" y="238" width="492" height="598" rx="121" fill="#0A4A50" fill-opacity=".65" stroke="#E9FFFB" stroke-opacity=".88" stroke-width="5"/>
+    <image x="278" y="227" width="508" height="622" href="zovaix-lens-macro.png" xlink:href="zovaix-lens-macro.png" preserveAspectRatio="xMidYMid slice" clip-path="url(#plateClip)"/>
+    <rect x="301" y="252" width="462" height="568" rx="104" fill="url(#glassEdge)" fill-opacity=".18" stroke="#EDFFFC" stroke-opacity=".75" stroke-width="4"/>
+    <path d="M336 337c89-104 263-137 369-52-106-31-265 19-370 133-36 39-72-37 1-81Z" fill="#F7FFFD" fill-opacity=".28"/>
+    <path d="M350 739c108 73 276 60 386-42-48 112-161 167-279 134-62-17-102-50-107-92Z" fill="#001822" fill-opacity=".4"/>
+    <rect x="328" y="280" width="408" height="510" rx="86" stroke="#C9FFF8" stroke-opacity=".22" stroke-width="2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="821" cy="318" r="38" fill="#CDF65B" stroke="#F3FFC0" stroke-width="3"/>
+    <circle cx="821" cy="318" r="18" fill="#0C5A5B" stroke="#DEFFF7" stroke-opacity=".62" stroke-width="3"/>
+    <circle cx="247" cy="826" r="28" fill="#6DDEFF" stroke="#E5FFFF" stroke-opacity=".9" stroke-width="3"/>
+    <circle cx="247" cy="826" r="11" fill="#095971"/>
+  </g>
+  <path d="M766 342c39 32 53 75 46 118" stroke="#E7FF8F" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 18"/>
+  <path d="M274 798c-34-23-49-62-47-98" stroke="#80E7FF" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 18"/>
+  <circle cx="840" cy="482" r="7" fill="#E9FF8B"/><circle cx="232" cy="690" r="7" fill="#73E7FF"/>
+  <rect x="46" y="1198" width="101" height="2" rx="1" fill="#CDF65B"/>
+  <rect x="46" y="1215" width="229" height="2" rx="1" fill="#B5DDD6" fill-opacity=".22"/>
+</svg>

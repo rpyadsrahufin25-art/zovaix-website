@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="rotate(52 33 187) scale(176)">
+      <stop stop-color="#6DE2D7"/><stop offset=".24" stop-color="#167D7C"/><stop offset=".63" stop-color="#07363C"/><stop offset="1" stop-color="#021A22"/>
+    </radialGradient>
+    <radialGradient id="glass" cx="0" cy="0" r="1" gradientTransform="matrix(78 73 -71 76 154 120)">
+      <stop stop-color="#FFF" stop-opacity=".95"/><stop offset=".17" stop-color="#DFFFF9" stop-opacity=".62"/><stop offset=".54" stop-color="#67D8D5" stop-opacity=".19"/><stop offset="1" stop-color="#001E28" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="56" y1="90" x2="355" y2="315" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5FFFF"/><stop offset=".17" stop-color="#7CD4D7"/><stop offset=".43" stop-color="#183E47"/><stop offset=".66" stop-color="#E7FFFF"/><stop offset=".84" stop-color="#32666A"/><stop offset="1" stop-color="#F2FFFF"/>
+    </linearGradient>
+    <linearGradient id="acid" x1="105" y1="78" x2="303" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1FF9A"/><stop offset=".45" stop-color="#C8F55A"/><stop offset="1" stop-color="#42B96D"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="126" y1="92" x2="270" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9FFFB" stop-opacity=".94"/><stop offset=".32" stop-color="#81D5D1" stop-opacity=".45"/><stop offset=".72" stop-color="#134B54" stop-opacity=".88"/><stop offset="1" stop-color="#061E2B"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="13" flood-color="#001016" flood-opacity=".72"/></filter>
+    <filter id="shine" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="blur"/><feSpecularLighting in="blur" surfaceScale="6" specularConstant=".85" specularExponent="21" lighting-color="#FFFFFF" result="spec"><feDistantLight azimuth="235" elevation="54"/></feSpecularLighting><feComposite in="spec" in2="SourceAlpha" operator="in" result="specOut"/><feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3=".72" k4="0"/></filter>
+  </defs>
+  <ellipse cx="204" cy="348" rx="113" ry="22" fill="#00151B" fill-opacity=".64" filter="url(#blur)"/>
+  <g filter="url(#shadow)">
+    <path d="M42 201C64 104 169 51 266 82c82 26 104 105 52 167-58 69-189 59-250-14" stroke="url(#steel)" stroke-width="12" stroke-linecap="round" opacity=".95"/>
+    <path d="M92 96c83-40 199 2 228 81 24 66-36 134-121 147-76 12-136-27-154-82" stroke="url(#acid)" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+    <path d="M67 273c-22-84 61-175 149-180 74-4 138 55 113 121-27 72-140 114-220 76" stroke="url(#steel)" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+  </g>
+  <circle cx="203" cy="199" r="113" fill="#0B6567" opacity=".32" filter="url(#soft)"/>
+  <circle cx="203" cy="199" r="103" fill="url(#core)" stroke="#B9FFF5" stroke-opacity=".52" stroke-width="2" filter="url(#shine)"/>
+  <path d="M132 116c26-25 72-38 112-23 16 6 30 16 41 28-41-16-105-12-153 23-15 11-24 7 0-28Z" fill="#F2FFFB" fill-opacity=".27"/>
+  <path d="M113 225c19 54 66 83 119 74 29-5 53-22 69-45-8 49-53 88-108 88-52 0-93-34-108-80 5-13 17-32 28-37Z" fill="#001C2A" fill-opacity=".48"/>
+  <g transform="rotate(-13 204 198)" filter="url(#shadow)">
+    <rect x="121" y="116" width="164" height="165" rx="38" fill="url(#plate)" stroke="#E9FFFB" stroke-opacity=".9" stroke-width="2"/>
+    <rect x="130" y="125" width="146" height="147" rx="30" fill="url(#glass)" stroke="#FFF" stroke-opacity=".4"/>
+    <path d="M143 139c37-26 89-25 118-9-26-4-71 5-111 35-13 10-21-11-7-26Z" fill="#FFF" fill-opacity=".36"/>
+    <path d="M137 244c44 16 92 9 132-23-12 36-47 55-87 48-21-4-36-13-45-25Z" fill="#012A34" fill-opacity=".47"/>
+    <rect x="158" y="151" width="91" height="91" rx="25" fill="#032D39" fill-opacity=".6" stroke="#D5FFFB" stroke-opacity=".32"/>
+    <image x="166" y="159" width="75" height="75" href="logo.png" xlink:href="logo.png"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="324" cy="104" r="24" fill="url(#acid)" stroke="#F4FFC1" stroke-width="2"/>
+    <circle cx="324" cy="104" r="12" fill="#0E665E" fill-opacity=".7"/>
+    <circle cx="87" cy="290" r="16" fill="#59D6FF" stroke="#E4FFFF" stroke-opacity=".82" stroke-width="2"/>
+  </g>
+  <path d="M302 113c16 9 27 26 30 45" stroke="#D8FF85" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 7" opacity=".85"/>
+  <circle cx="346" cy="168" r="3" fill="#E9FF91"/><circle cx="56" cy="171" r="3" fill="#82E6FF"/>
+</svg>

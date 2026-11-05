@@ -1,0 +1,18 @@
+{
+  "id": "/",
+  "name": "ZOVAIX — Growth Agency",
+  "short_name": "ZOVAIX",
+  "description": "A connected growth agency for brands ready to move.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071d1f",
+  "theme_color": "#071d1f",
+  "icons": [
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "160x160",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
