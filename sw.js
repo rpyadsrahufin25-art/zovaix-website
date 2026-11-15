@@ -1,0 +1,35 @@
+/* ZOVAIX offline-first cache: fast repeat visits without delaying first paint. */
+const VERSION='zovaix-v4';
+const CORE=[
+  '/', '/index.html', '/mobile/', '/mobile/index.html', '/404.html',
+  '/site.webmanifest', '/assets/img/logo.png', '/assets/img/anton.woff2',
+  '/assets/img/founder-raushan.jpg',
+  ...Array.from({length:12},(_,i)=>`/assets/f/h${String(i).padStart(3,'0')}.webp`),
+  ...Array.from({length:12},(_,i)=>`/assets/m/h${String(i).padStart(3,'0')}.webp`)
+];
+
+self.addEventListener('install',event=>{
+  event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));
+});
+
+self.addEventListener('activate',event=>{
+  event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==VERSION).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));
+});
+
+self.addEventListener('fetch',event=>{
+  const request=event.request;
+  if(request.method!=='GET')return;
+  const url=new URL(request.url);
+  if(url.origin!==self.location.origin)return;
+  const isDocument=request.mode==='navigate';
+  const isAsset=url.pathname.startsWith('/assets/');
+  if(!isDocument&&!isAsset)return;
+  event.respondWith(caches.match(request).then(hit=>{
+    const fresh=fetch(request).then(response=>{
+      if(response&&response.ok){const copy=response.clone();caches.open(VERSION).then(cache=>cache.put(request,copy));}
+      return response;
+    }).catch(()=>hit);
+    /* HTML stays fresh; media and fonts return from cache instantly and refresh quietly. */
+    return hit&&!isDocument?(fresh.catch(()=>hit),hit):fresh;
+  }));
+});

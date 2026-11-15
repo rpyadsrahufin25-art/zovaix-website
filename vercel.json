@@ -11,6 +11,15 @@
   ],
   "headers": [
     {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
       "source": "/assets/(.*)",
       "headers": [
         {
@@ -33,7 +42,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self' data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data:; media-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests"
+          "value": "default-src 'self'; base-uri 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; font-src 'self' data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data: https://www.facebook.com; media-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests"
         },
         {
           "key": "Permissions-Policy",
