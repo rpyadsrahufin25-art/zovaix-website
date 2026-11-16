@@ -1,8 +1,8 @@
 /* ZOVAIX offline-first cache: fast repeat visits without delaying first paint. */
-const VERSION='zovaix-v5';
+const VERSION='zovaix-v6';
 const CORE=[
   '/', '/index.html', '/mobile/', '/mobile/index.html', '/404.html',
-  '/site.webmanifest', '/assets/img/logo.png', '/assets/img/anton.woff2'
+  '/site.webmanifest', '/assets/img/zovaix-logo-artifact.png', '/assets/img/anton.woff2'
 ];
 
 self.addEventListener('install',event=>{

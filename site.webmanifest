@@ -9,7 +9,7 @@
   "theme_color": "#071d1f",
   "icons": [
     {
-      "src": "/assets/img/logo.png",
+      "src": "/assets/img/zovaix-logo-artifact.png",
       "sizes": "160x160",
       "type": "image/png",
       "purpose": "any maskable"
