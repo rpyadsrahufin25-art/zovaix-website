@@ -1,5 +1,5 @@
 /* ZOVAIX offline-first cache: fast repeat visits without delaying first paint. */
-const VERSION='zovaix-v7';
+const VERSION='zovaix-v8';
 const CORE=[
   '/', '/index.html', '/mobile/', '/mobile/index.html', '/404.html',
   '/site.webmanifest', '/assets/img/zovaix-favicon-v2.png', '/assets/img/anton.woff2'
